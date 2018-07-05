@@ -9,8 +9,8 @@ import play.api.routing.Router
 import router.Routes
 
 /**
- * Application loader that wires up the application dependencies using Macwire
- */
+  * Application loader that wires up the application dependencies using Macwire
+  */
 class GreetingApplicationLoader extends ApplicationLoader {
   def load(context: Context): Application = new GreetingComponents(context).application
 }
@@ -18,7 +18,7 @@ class GreetingApplicationLoader extends ApplicationLoader {
 class GreetingComponents(context: Context) extends BuiltInComponentsFromContext(context)
   with GreetingModule
   with AssetsComponents
-  with I18nComponents 
+  with I18nComponents
   with play.filters.HttpFiltersComponents {
 
   // set up logger
