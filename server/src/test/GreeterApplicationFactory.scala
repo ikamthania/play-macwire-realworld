@@ -15,7 +15,7 @@ trait GreeterApplicationFactory extends FakeApplicationFactory {
         initialConfiguration = Configuration.load(env),
         lifecycle = new DefaultApplicationLifecycle()
       )
-      val loader = new GreetingApplicationLoader()
+      val loader = new RealWorldApplicationLoader()
       loader.load(context)
     }
   }
