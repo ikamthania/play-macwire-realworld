@@ -29,6 +29,9 @@ object AppSettings {
 
   val jvmDependencies = Def.setting(
     Seq(
+      "org.julienrf" %% "endpoints-openapi" % "0.6.0",
+      // (optional) JSON serialization using circe.io
+      "org.julienrf" %% "endpoints-algebra-circe" % "0.6.0",
       "com.typesafe.play" %% "play" % "2.6.15",
       "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test,
       "com.softwaremill.macwire" %% "macros" % "2.3.1" % "provided",
